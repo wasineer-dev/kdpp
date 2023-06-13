@@ -3,19 +3,6 @@ import itertools
 import tensorflow as tf
 import tensorflow_probability as tfp
 import matplotlib.pyplot as plt
-
-def elementary_sym_poly(N, k, e_vals):
-    polyn = np.zeros((N, k))
-    for i in np.arange(N):
-       polyn[i][0] = 1
-    for j in np.arange(k):
-       polyn[0][j] = 0
-
-    for l in np.arange(k):
-       for n in np.arange(N):
-          polyn[n][l] = polyn[n-1][l] + e_vals[n]*polyn[n-1][l-1]
-
-    return polyn
  
 tfd = tfp.distributions
 tfpk = tfp.math.psd_kernels
