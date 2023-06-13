@@ -51,7 +51,7 @@ for source, target, dt in zip(df[1], df[2], df[3]):
     if (i != j):
         dmatrix[i,j] = float(dt)
 
-similarity = np.exp(-np.square(dmatrix/0.1))
+similarity = np.exp(-np.square(dmatrix/0.2))
 e_vals_K, e_vecs = eigh(similarity)
 print(e_vals_K)
 
@@ -75,14 +75,11 @@ dpp_L.flush_samples()
 for _ in range(1000):
     dpp_L.sample_exact_k_dpp(size=k)
 
-nb_samples = 1000
-result = []
+nb_samples = 100
 for _ in range(nb_samples):
     dpp_L.flush_samples()
     sampl = dpp_L.sample_mcmc_k_dpp(size=8, nb_iter=10000)
-    result.append(sampl)
-
-print(result)
+    print(sampl)
 
 sizes = list(map(len, dpp_L.list_of_samples))
 print('E[|X|]:\n emp={:.3f}, theo={:.3f}'
