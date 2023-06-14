@@ -14,3 +14,7 @@ Output: Samples from k-DPP
 
 
 TODO: improve conversion from distance to similarity, implement Gibbs sampling
+
+#### Acknowledgement
+
+Alexander Schliep, Joel Gustafsson for help with [dvstar](https://github.com/Schlieplab/dvstar)
