@@ -11,6 +11,7 @@ Output: Samples from k-DPP
 
 #### Requirement
 * Nextflow
+* BBTools such as bbduk.sh and reformat.sh
 * [dvstar](https://github.com/Schlieplab/dvstar) to generate pairwise distances between VLMC 
 * [DPPy](https://github.com/guilgautier/DPPy)
 * [Tensorflow](https://www.tensorflow.org/install)
