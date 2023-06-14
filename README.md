@@ -2,6 +2,7 @@
  k-DPP
 
 Input: Pairwise distances between VLMC
+
 Output: Samples from k-DPP
 
 Dependency: , DPPy and Tensorflow
