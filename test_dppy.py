@@ -102,7 +102,6 @@ def sampler(number_of_samples):
 
 kernel_matrix = 0.1*tf.exp(-np.square(dmatrix/beta))
 eigenvalues, eigenvectors = tf.linalg.eigh(kernel_matrix)
-
 tf_dpp = tfd.DeterminantalPointProcess(eigenvalues, eigenvectors)
 
 def sample_prob(n_iter):

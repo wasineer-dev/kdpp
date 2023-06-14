@@ -1,12 +1,16 @@
 ## kdpp
- k-DPP
+ k-DPP for subset selection using VLMC distances
+
+This repository contains an example on how to use DPPy and Tensorflow to sample exactly from k-DPP and evaluate log probability.
 
 Input: Pairwise distances between VLMC
 
 Output: Samples from k-DPP
 
-Dependency: dvstar, DPPy and Tensorflow
+#### Requirement
+* to generate pairwise distances between VLMC, please install [dvstar](https://github.com/Schlieplab/dvstar) 
+* [DPPy](https://github.com/guilgautier/DPPy)
+* [Tensorflow](https://www.tensorflow.org/install)
 
-An example on how to use DPPy and Tensorflow to sample exactly from k-DPP and evaluate log probability.
 
 TODO: improve conversion from distance to similarity, implement Gibbs sampling
